@@ -1,0 +1,411 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+@import '/*';
+@import 'bootstrap';
+.body{
+	background-color: #f1f1f1;
+	height: 100%;
+	position: relative;
+}
+
+
+
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+	text-align: center;
+	background-color: #f1f1f1;         /* Footer height */
+}
+.panel-google-plus {
+    position: relative;
+    border-radius: 0px;
+    border: 1px solid rgb(216, 216, 216);
+    font-family: 'Roboto', sans-serif;
+}
+.panel-google-plus > .dropdown {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+.panel-google-plus > .dropdown > span > span {
+    font-size: 10px;
+}
+.panel-google-plus > .dropdown > .dropdown-menu {
+    left: initial;
+    right: 0px;
+    border-radius: 2px;
+    width: 100px;
+}
+.panel-google-plus > .panel-google-plus-tags {
+    position: absolute;
+    top: 35px;
+    right: -3px;
+}
+.panel-google-plus > .panel-google-plus-tags > ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.panel-google-plus > .panel-google-plus-tags > ul:hover {
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+.panel-google-plus > .panel-google-plus-tags > ul > li {
+    display: block;
+    right: 0px;
+    width: 0px;
+    padding: 5px 0px 5px 0px;
+    background-color: rgb(245, 245, 245);
+    font-size: 12px;
+    overflow: hidden;
+}
+.panel-google-plus > .panel-google-plus-tags > ul > li::after {
+    content:"";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+	border-right: 3px solid rgb(66, 127, 237);
+}
+.panel-google-plus > .panel-google-plus-tags > ul:hover > li,
+.panel-google-plus > .panel-google-plus-tags > ul > li:first-child {
+    padding: 5px 15px 5px 10px;
+    width: auto;
+    cursor: pointer;
+    margin-left: auto;
+}
+.panel-google-plus > .panel-google-plus-tags > ul:hover > li {
+    background-color: rgb(255, 255, 255);
+}
+.panel-google-plus > .panel-google-plus-tags > ul > li:hover {
+    background-color: rgb(66, 127, 237);
+    color: rgb(255, 255, 255);
+}
+.panel-google-plus > .panel-heading,
+.panel-google-plus > .panel-footer {
+    background-color: rgb(255, 255, 255);
+    border-width: 0px;
+}
+.panel-google-plus > .panel-heading {
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+.panel-google-plus > .panel-heading > img {
+    margin-right: 15px;
+}
+.panel-google-plus > .panel-heading > h3 {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.panel-google-plus > .panel-heading > h5 {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-weight: 400;
+}
+.panel-google-plus > .panel-body {
+    padding-top: 5px;
+    font-size: 13px;
+}
+.panel-google-plus > .panel-body > .panel-google-plus-image {
+    display: block;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(217, 217, 217);
+}
+.panel-google-plus > .panel-body > .panel-google-plus-image > img {
+    max-width: 100%;
+}
+
+.panel-google-plus > .panel-footer {
+    font-size: 14px;
+    font-weight: 700;
+    min-height: 54px;
+}
+.panel-google-plus > .panel-footer > .btn {
+    float: left;
+    margin-right: 8px;
+}
+.panel-google-plus > .panel-footer > .input-placeholder {
+    display: block;
+    margin-left: 98px;
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 8px 6px 7px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+}
+.panel-google-plus.panel-google-plus-show-comment > .panel-footer > .input-placeholder {
+    display: none;
+}
+.panel-google-plus > .panel-google-plus-comment {
+    display: none;
+    padding: 10px 20px 15px;
+    border-top: 1px solid rgb(229, 229, 229);
+    background-color: rgb(245, 245, 245);
+}
+.panel-google-plus.panel-google-plus-show-comment > .panel-google-plus-comment {
+    display: block;
+}
+/*.panel-google-plus > .panel-google-plus-comment > img {
+    float: left;
+}*/
+.panel-google-plus > .panel-google-plus-comment > .panel-google-plus-textarea {
+    float: right;
+    width: calc(100% - 56px);
+}
+.panel-google-plus > .panel-google-plus-comment > .panel-google-plus-textarea > textarea {
+    display: block;
+    /*margin-left: 60px;
+    width: calc(100% - 56px);*/
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 217, 217);
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+    resize: vertical;
+}
+.panel-google-plus > .panel-google-plus-comment > .panel-google-plus-textarea > .btn {
+    margin-top: 10px;
+    margin-right: 8px;
+    width: 100%;
+}
+@media (min-width: 992px) {
+    .panel-google-plus > .panel-google-plus-comment > .panel-google-plus-textarea > .btn {
+        width: auto;
+    }
+}
+
+
+.panel-google-plus .btn {
+    border-radius: 3px;
+}
+.panel-google-plus .btn-default {
+    border: 1px solid rgb(217, 217, 217);
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+}
+.panel-google-plus .btn-default:hover,
+.panel-google-plus .btn-default:focus,
+.panel-google-plus .btn-default:active {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+}
+
+.sessionbuttons{
+    color: black;
+    }
+
+.avatar-image{
+	border-radius: 49%
+}
+#map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+
+      #infowindow-content {
+        display: none;
+      }
+
+      #map #infowindow-content {
+        display: inline;
+      }
+
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+      }
+
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+
+      .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+      #target {
+        width: 345px;
+      }
+			.checkbox {
+				padding-left: 20px;
+			}
+
+			.checkbox label {
+				display: inline-block;
+				position: relative;
+				padding-left: 5px;
+			}
+
+			.checkbox label::before {
+				content: "";
+				display: inline-block;
+				position: absolute;
+				width: 17px;
+				height: 17px;
+				left: 0;
+				margin-left: -20px;
+				border: 1px solid #cccccc;
+				border-radius: 3px;
+				background-color: #fff;
+				-webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+				-o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+				transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+			}
+
+			.checkbox label::after {
+				display: inline-block;
+				position: absolute;
+				width: 16px;
+				height: 16px;
+				left: 0;
+				top: 0;
+				margin-left: -20px;
+				padding-left: 3px;
+				padding-top: 1px;
+				font-size: 11px;
+				color: #555555;
+			}
+
+			.checkbox input[type="checkbox"] {
+				opacity: 0;
+			}
+
+			.checkbox input[type="checkbox"]:focus+label::before {
+				/*outline: thin dotted;
+			    outline: 5px auto -webkit-focus-ring-color;
+			    outline-offset: -2px; */
+			}
+
+			.checkbox input[type="checkbox"]:checked+label::after {
+				font-family: 'FontAwesome';
+				content: "\f00c";
+			}
+
+			.checkbox input[type="checkbox"]:disabled+label {
+				opacity: 0.65;
+			}
+
+			.checkbox input[type="checkbox"]:disabled+label::before {
+				background-color: #eeeeee;
+				cursor: not-allowed;
+			}
+
+			.checkbox.checkbox-circle label::before {
+				border-radius: 50%;
+			}
+
+			.checkbox.checkbox-inline {
+				margin-top: 0;
+			}
+
+			.checkbox-primary input[type="checkbox"]:checked+label::before {
+				background-color: #428bca;
+				border-color: #428bca;
+			}
+
+			.checkbox-primary input[type="checkbox"]:checked+label::after {
+				color: #fff;
+			}
+
+			.checkbox-danger input[type="checkbox"]:checked+label::before {
+				background-color: #d9534f;
+				border-color: #d9534f;
+			}
+
+			.checkbox-danger input[type="checkbox"]:checked+label::after {
+				color: #fff;
+			}
+
+			.checkbox-info input[type="checkbox"]:checked+label::before {
+				background-color: #428BCA;
+				border-color: #428BCA;
+			}
+
+			.checkbox-info input[type="checkbox"]:checked+label::after {
+				color: #fff;
+			}
+
+			.checkbox-warning input[type="checkbox"]:checked+label::before {
+				background-color: #f0ad4e;
+				border-color: #f0ad4e;
+			}
+
+			.checkbox-warning input[type="checkbox"]:checked+label::after {
+				color: #fff;
+			}
+
+			.checkbox-success input[type="checkbox"]:checked+label::before {
+				background-color: #5cb85c;
+				border-color: #5cb85c;
+			}
+
+			.checkbox-success input[type="checkbox"]:checked+label::after {
+				color: #fff;
+			}
